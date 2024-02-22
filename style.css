@@ -1,0 +1,44 @@
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+
+
+
+/* Navigation bar */
+
+nav{
+    position: absolute;
+    z-index: 1;
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+    font-family: system-ui;
+    
+}
+
+.nav-links {
+    display: flex; /* Display the list items in a row */
+    gap: 80px; /* Adjust the space between the links as needed */
+
+    position: relative;
+    margin-block: 2rem;
+    margin-inline: 2rem;
+}
+
+.nav-links li {
+    display: inline; /* Display list items as inline elements */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #5f5f5f; /* Adjust the link color */
+    font-weight: bold;
+}
+
+
