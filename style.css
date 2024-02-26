@@ -9,17 +9,46 @@ body {
 
 
 
-
-
-.container {
-    --max-width: 50rem;
-    width: min(100% - 2rem, var(--max-width));
-    margin-inline: auto;
-    position: relative;
-    isolation: isolate;
-    padding: 1em;
-    margin-block: 5rem;
+.row {
+  margin-left: 20%; /* Adjust this value to increase/decrease space */
+  margin-right: 10%; /* Adjust this value to increase/decrease space */
+  margin-top: 5%;
 }
+
+.column {
+  float: left;
+  
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  margin-right: 5%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 65%;
+  margin-left: 5%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* name (James Mitchell) */
+.name {
+  font-size: 45px;
+}
+/* paragraph under name */
+.nameparagraph {
+  margin-right: 30%;
+}
+
+
 
 
 
@@ -52,4 +81,25 @@ body {
   /* background-color: #04AA6D; */
   color: #47c1f1;
   font-weight: bolder;
+}
+
+.topnav a.github {
+  color: #dcacf2;
+}
+
+
+
+
+/* NameDescription */
+.namedescription {
+  
+}
+
+.namedescription a {
+  font-size: 50px;
+  font-weight: bolder;
+  text-decoration: none; /*seems to get rid of the underline */
+  color: #454545;
+
+  padding-top: 100px;
 }
