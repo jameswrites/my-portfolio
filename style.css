@@ -1,3 +1,19 @@
+/* Default light mode styles */
+/* :root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+} */
+/* body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+} */
+/* Dark mode styles */
+/* .dark-mode {
+  --bg-color: #000000; 
+  --text-color: #ffffff; 
+} */
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,6 +43,7 @@ body {
 .column.side {
   width: 40%;
   margin-right: 5%;
+  margin-bottom: 10%
 }
 
 /* Middle column */
@@ -52,6 +69,77 @@ body {
 .nameparagraph {
   margin-right: 25%;
 }
+
+
+
+/* CSS for photo links */
+.photo-links {
+  margin-top: 20px;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center;
+}
+
+.photo-links a {
+  display: inline-block; /* Make anchor tags behave like inline-block elements */
+  margin-right:25px; /* Add spacing between links */
+}
+
+/* .photo-links button {
+  display: inline-block; 
+  margin-right:25px; 
+} */
+
+.photo-links img {
+  width: 30px; /* Set the width of the images */
+  height: auto; /* Automatically adjust height while maintaining aspect ratio */
+}
+
+
+
+/* CSS for project cards */
+.projects {
+  margin-top: 100px;
+}
+.project-card {
+  /* border: 1px solid #ddd; Add a border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add some padding */
+  margin-bottom: 100px; /* Add space between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  
+}
+
+.project-card img {
+  max-width: 100%; /* Make sure images don't overflow */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.project-info {
+  margin-top: 10px; /* Add space between image and info */
+}
+
+.project-info h3 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.project-info p {
+  margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+.project-info a {
+  display: inline-block; /* Make the link a block element */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+}
+
+.project-info a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
 
 
 
