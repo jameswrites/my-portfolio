@@ -50,6 +50,7 @@ body {
 .column.middle {
   width: 40%;
   margin-left: 5%;
+  
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -111,7 +112,10 @@ body {
 }
 
 .project-card img {
-  max-width: 100%; /* Make sure images don't overflow */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  /* max-width: 100%; */ /* Make sure images don't overflow */
   border-radius: 8px; /* Rounded corners for images */
 }
 
@@ -130,14 +134,15 @@ body {
 .project-info a {
   display: inline-block; /* Make the link a block element */
   background-color: #007bff; /* Blue background */
-  color: #fff; /* White text */
+  color: #ffffff; /* White text */
   padding: 10px 20px; /* Add padding */
   border-radius: 5px; /* Rounded corners */
   text-decoration: none; /* Remove underline */
 }
 
 .project-info a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0071ea; /* Darker blue on hover */
+  color: white;
 }
 
 
@@ -196,3 +201,29 @@ body {
 
   padding-top: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Okay so this literally jsut sticks it stuck to the bottom of the screen so you cnat see content behind it so not good */
+/* footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; 
+  background-color: #f2f2f2; 
+  padding: 20px; 
+  text-align: center; 
+} */
