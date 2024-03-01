@@ -66,6 +66,9 @@ body {
 .name {
   font-size: 43px;
 }
+.university {
+  /* color: #007bff; */
+}
 /* paragraph under name */
 .nameparagraph {
   margin-right: 25%;
