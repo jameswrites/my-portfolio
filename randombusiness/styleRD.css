@@ -79,7 +79,8 @@ body{
         68ch 0 1px var(--clr);
     }
 }
-
+/* NOTE if need to make it so that the messages spawn earlier you just need to add on more  68ch 0 1px var(--clr)   to both the animation and key frames parts.*/
+/* refer to this video: https://www.youtube.com/watch?v=V9tsKBP9YaM&ab_channel=EasyWebDev */
 
 
 
@@ -127,3 +128,41 @@ footer{
     }
 }
 
+
+
+
+.promotional-card {
+    display: flex;             
+    justify-content: center;
+
+
+    /* position: relative;
+    display: inline-block; */
+}
+.promotional-card img {
+    /* height: 1000px; */
+    height: 50%;
+    width: 50%;
+    /* padding: 20px; */
+    transform: rotate(-90deg)
+    
+}
+.shop-now-btn {
+    /* position: absolute; */
+    /* bottom: 10px;
+    left: 10px;  */
+    display: flex;             
+    justify-content: center;
+    height: 50%;
+    width: 15%;
+
+
+    
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #007bff; /* Change to desired background color */
+    color: #fff; /* Change to desired text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
